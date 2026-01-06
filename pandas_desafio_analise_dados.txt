@@ -1,0 +1,21 @@
+### 1. Valor Total da Folha Salarial: 2717493.22
+
+### 2. Valor Total do Faturamento: 5745150.0
+
+### 3. Porcentagem de Funcionários que fecharam contratos: 86.84%
+
+### 4. Total de Contratos por Área:
+  Administrativo: 64
+  Financeiro: 44
+  Logística: 46
+  Operações: 49
+  Comercial: 49
+
+### 5. Total de Funcionários por Área:
+  Administrativo: 26
+  Financeiro: 18
+  Logística: 21
+  Operações: 23
+  Comercial: 26
+
+### 6. Ticket Médio dos Contratos: 2502.56
