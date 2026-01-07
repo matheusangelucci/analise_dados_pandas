@@ -13,8 +13,8 @@ total_folha = sum([sum([salario, impostos, beneficios, vt, vr]) for salario, imp
 df_fatu_service = df_service.loc[:, ["ID Cliente", "Tempo Total de Contrato (Meses)"]]
 df_fatu_lead = df_lead.loc[:, ["ID Cliente", "Valor Contrato Mensal"]]
 
-df_fatu = df_fatu_lead.merge(
-    df_fatu_service,
+df_fatu = df_fatu_service.merge(
+    df_fatu_lead,
     how='left',
     left_on=["ID Cliente"],
     right_on=["ID Cliente"]
@@ -73,5 +73,6 @@ with open('pandas_desafio_analise_dados.txt', 'w', encoding='utf-8') as w:
     w.write(f'### 4. Total de Contratos por Área:\n  Administrativo: {contracts_administrativo}\n  Financeiro: {contracts_financeiro}\n  Logística: {contracts_logistica}\n  Operações: {contracts_operacoes}\n  Comercial: {contracts_comercial}\n\n')
     w.write(f'### 5. Total de Funcionários por Área:\n  Administrativo: {employee_administrativo}\n  Financeiro: {employee_financeiro}\n  Logística: {employee_logistica}\n  Operações: {employee_operacoes}\n  Comercial: {employee_comercial}\n\n')
     w.write(f'### 6. Ticket Médio dos Contratos: {mean_ticket}\n')
+
 
 
